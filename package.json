@@ -1,0 +1,21 @@
+{
+  "name": "proyecto-saucedemo2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "test2": "cypress run",
+    "test-chrome": "cypress run --browser chrome",
+    "test-firefox": "cypress run --browser firefox",
+    "test-dev": "cypress run --spec cypress/e2e/login_ok.cy.js, cypress/e2e/login_fail.cy.js --browser chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^13.14.2",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-real-events": "^1.13.0"
+  }
+}
